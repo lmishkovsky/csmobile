@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using CSMobile.Pages;
+using Xamarin.Forms;
 
 namespace CSMobile
 {
@@ -8,7 +9,9 @@ namespace CSMobile
         {
             InitializeComponent();
 
-            MainPage = new CSMobilePage();
+            // MainPage = new CSMobilePage();
+
+            MainPage = new NavigationPage(new SignIn());
         }
 
         protected override void OnStart()
