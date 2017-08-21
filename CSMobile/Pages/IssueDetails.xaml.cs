@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.IO;
+using System.Text;
+using System.Xml.Linq;
 using Xamarin.Forms;
 
 namespace CSMobile.Pages
@@ -33,7 +35,33 @@ namespace CSMobile.Pages
 
             this.issueXML = issueXML;
 
-            editorIssueDetails.Text = this.issueXML;
+            lblTitleValue.Text = GetXmlNodeValue("<d:Title>", "</d:Title>");
+            lblStatusValue.Text = GetXmlNodeValue("<d:StatusValue>", "</d:StatusValue>");
+            lblTypeValue.Text = GetXmlNodeValue("<d:ItemTypeValue>", "</d:ItemTypeValue>");
+            lblPriorityValue.Text = GetXmlNodeValue("<d:PriorityValue>", "</d:PriorityValue>");
+            lblSummaryValue.Text = GetXmlNodeValue("<d:Summary>", "</d:Summary>");
+            lblCommentsValue.Text = GetXmlNodeValue("<d:CommentsAndUpdates>", "</d:CommentsAndUpdates>");
 		}
+
+        /// <summary>
+        /// Gets the value.
+        /// </summary>
+        /// <returns>The value.</returns>
+        /// <param name="startTag">Start tag.</param>
+        /// <param name="endTag">End tag.</param>
+        private string GetXmlNodeValue(string startTag, string endTag)
+        {
+            string retValue = string.Empty;
+
+            int startIndex = this.issueXML.IndexOf(startTag);
+            int endIndex = this.issueXML.IndexOf(endTag);
+
+            if (startIndex != -1 && endIndex != -1)
+            {
+                retValue = this.issueXML.Substring(startIndex + startTag.Length, endIndex - startIndex - endTag.Length + 1);
+            }
+
+            return retValue;
+        }
     }
 }
