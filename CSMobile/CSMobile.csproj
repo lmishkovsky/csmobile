@@ -57,6 +57,7 @@
     <Compile Include="Pages\IssueDetails.xaml.cs">
       <DependentUpon>IssueDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

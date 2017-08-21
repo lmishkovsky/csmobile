@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace CSMobile.Pages
@@ -19,7 +20,7 @@ namespace CSMobile.Pages
 		/// <summary>
 		/// The remote site URL.
 		/// </summary>
-		string remoteSiteUrl = "https://grcinternal.corestream.co.uk";
+		// string remoteSiteUrl = "https://grcinternal.corestream.co.uk";
 
         /// <summary>
         /// The cookie container.
@@ -46,12 +47,12 @@ namespace CSMobile.Pages
 
             if (!String.IsNullOrEmpty(username) && !String.IsNullOrEmpty(password))
             {
-                Authenticate(remoteSiteUrl, username, password);
+                await Authenticate(Constants.REMOTESITEURL, username, password);
 
                 if (cookieContainer != null && cookieContainer.Count > 0)
                 {
                     // authenticated
-                    await Navigation.PushAsync(new IssueID());
+                    await Navigation.PushAsync(new IssueID(cookieContainer));
                 }
                 else
                 {
@@ -71,9 +72,9 @@ namespace CSMobile.Pages
         /// <param name="siteUri">Site URI.</param>
         /// <param name="userName">User name.</param>
         /// <param name="passWord">Pass word.</param>
-        async void Authenticate(string siteUri, string userName, string passWord)
+        async Task Authenticate(string siteUri, string userName, string passWord)
         {
-            string authServiceUrl = string.Format("{0}/_vti_bin/authentication.asmx", remoteSiteUrl);
+            string authServiceUrl = string.Format("{0}/_vti_bin/authentication.asmx", Constants.REMOTESITEURL);
 
             // get the FedAuth cookie and save it in a CookieContainer
             var request = WebRequest.CreateHttp(authServiceUrl);
