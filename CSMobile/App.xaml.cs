@@ -9,8 +9,6 @@ namespace CSMobile
         {
             InitializeComponent();
 
-            // MainPage = new CSMobilePage();
-
             MainPage = new NavigationPage(new SignIn());
         }
 

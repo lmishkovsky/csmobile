@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<entry xml:base="https://grcinternal.corestream.co.uk/ProPo/_vti_bin/listdata.svc/" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:etag="W/&quot;2&quot;" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://grcinternal.corestream.co.uk/ProPo/_vti_bin/listdata.svc/IssuesAndUserStories(3020)</id>
+  <title type="text">Headlines not triggering</title>
+  <updated>2017-08-07T10:38:52+01:00</updated>
+  <author>
+    <name />
+  </author>
+  <link rel="edit" title="IssuesAndUserStoriesItem" href="IssuesAndUserStories(3020)" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ItemType" type="application/atom+xml;type=entry" title="ItemType" href="IssuesAndUserStories(3020)/ItemType" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Assignee" type="application/atom+xml;type=entry" title="Assignee" href="IssuesAndUserStories(3020)/Assignee" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ImpactedClients" type="application/atom+xml;type=feed" title="ImpactedClients" href="IssuesAndUserStories(3020)/ImpactedClients" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Priority" type="application/atom+xml;type=entry" title="Priority" href="IssuesAndUserStories(3020)/Priority" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Status" type="application/atom+xml;type=entry" title="Status" href="IssuesAndUserStories(3020)/Status" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/AddedToTestPack" type="application/atom+xml;type=entry" title="AddedToTestPack" href="IssuesAndUserStories(3020)/AddedToTestPack" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Archived" type="application/atom+xml;type=entry" title="Archived" href="IssuesAndUserStories(3020)/Archived" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/SourceOfIssue" type="application/atom+xml;type=entry" title="SourceOfIssue" href="IssuesAndUserStories(3020)/SourceOfIssue" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/CategoryChoice" type="application/atom+xml;type=feed" title="CategoryChoice" href="IssuesAndUserStories(3020)/CategoryChoice" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Release" type="application/atom+xml;type=entry" title="Release" href="IssuesAndUserStories(3020)/Release" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/IssueStoryLookup" type="application/atom+xml;type=feed" title="IssueStoryLookup" href="IssuesAndUserStories(3020)/IssueStoryLookup" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/CreatedBy" type="application/atom+xml;type=entry" title="CreatedBy" href="IssuesAndUserStories(3020)/CreatedBy" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ModifiedBy" type="application/atom+xml;type=entry" title="ModifiedBy" href="IssuesAndUserStories(3020)/ModifiedBy" />
+  <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Attachments" type="application/atom+xml;type=feed" title="Attachments" href="IssuesAndUserStories(3020)/Attachments" />
+  <category term="Microsoft.SharePoint.DataService.IssuesAndUserStoriesItem" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+  <content type="application/xml">
+    <m:properties>
+      <d:ContentTypeID>0x0100D59B45F97D38FF43883B2E00278765DB</d:ContentTypeID>
+      <d:Title>Headlines not triggering</d:Title>
+      <d:OriginalID m:null="true" />
+      <d:ItemTypeValue>Issue</d:ItemTypeValue>
+      <d:Summary>'Headline_Topic_End Use_22' and 'Headline_Topic_End Use_23' are not being triggered. The rules say they must have an answer Count_GT than 0, however if I put in any answer e.g a country name or type of End Use into either auto testing or the survey, neither headline appears. &#xD;
+I have attached a url to the survey which is named as 'sarah headline testing 1'&#xD;
+I have also attached the auto testing results, the test was named 07/08/17 Test 1. There is also an attached file of the xml used.</d:Summary>
+      <d:AssigneeId m:type="Edm.Int32">41</d:AssigneeId>
+      <d:Category m:null="true" />
+      <d:DueDate m:type="Edm.DateTime" m:null="true" />
+      <d:PriorityValue>High</d:PriorityValue>
+      <d:StatusValue>L. Closed</d:StatusValue>
+      <d:TestGuidance m:null="true" />
+      <d:AddedToTestPackValue m:null="true" />
+      <d:ArchivedValue>No</d:ArchivedValue>
+      <d:CommentsAndUpdates>This is a COUNT_GT issue, it is being sorted.</d:CommentsAndUpdates>
+      <d:TechnicalDetails m:null="true" />
+      <d:EstimateDays m:type="Edm.Double">0</d:EstimateDays>
+      <d:SourceOfIssueValue m:null="true" />
+      <d:ReleaseId m:type="Edm.Int32" m:null="true" />
+      <d:ClientFreeText m:null="true" />
+      <d:NewComments m:null="true" />
+      <d:URLS>http://grctest.corestream.co.uk/PulseSBRA/Pages/GenericGrid.aspx&#xD;
+&#xD;
+http://grctest.corestream.co.uk/PulseSBRA/Lists/Auto%20Testing/AllItems.aspx?InitialTabId=Ribbon%2EListItem&amp;VisibilityContext=WSSTabPersistence</d:URLS>
+      <d:Dumdumdummyfield m:null="true" />
+      <d:Id m:type="Edm.Int32">3020</d:Id>
+      <d:ContentType>Item</d:ContentType>
+      <d:Modified m:type="Edm.DateTime">2017-08-07T10:38:52</d:Modified>
+      <d:Created m:type="Edm.DateTime">2017-08-07T10:38:52</d:Created>
+      <d:CreatedById m:type="Edm.Int32">50</d:CreatedById>
+      <d:ModifiedById m:type="Edm.Int32">50</d:ModifiedById>
+      <d:Owshiddenversion m:type="Edm.Int32">2</d:Owshiddenversion>
+      <d:Version>2.0</d:Version>
+      <d:Path>/ProPo/Lists/Issues and User Stories</d:Path>
+    </m:properties>
+  </content>
+</entry>

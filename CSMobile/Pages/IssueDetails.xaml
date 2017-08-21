@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CSMobile.Pages.IssueDetails">
 	<StackLayout>
-        <Editor x:Name="editorIssueDetails"></Editor>
+        
+        <Label x:Name="lblTitle" TextColor="Green" Text="Title" FontSize="20" FontAttributes="Bold"></Label>
+        <Label x:Name="lblTitleValue"></Label>
+
+        <Label x:Name="lblStatus" TextColor="Green" Text="Status" FontSize="20" FontAttributes="Bold"></Label>
+        <Label x:Name="lblStatusValue"></Label>
+
+        <Label x:Name="lblType" TextColor="Green" Text="Type" FontSize="20" FontAttributes="Bold"></Label>
+        <Label x:Name="lblTypeValue"></Label>
+
+        <Label x:Name="lblPriority" TextColor="Green" Text="Priority" FontSize="20" FontAttributes="Bold"></Label>
+        <Label x:Name="lblPriorityValue"></Label>
+
+        <Label x:Name="lblSummary" TextColor="Green" Text="Summary" FontSize="20" FontAttributes="Bold"></Label>
+        <Label x:Name="lblSummaryValue"></Label>
+
+        <Label x:Name="lblComments" TextColor="Green" Text="Comments" FontSize="20" FontAttributes="Bold"></Label>
+        <Label x:Name="lblCommentsValue"></Label>
+        
     </StackLayout>
 </ContentPage>
